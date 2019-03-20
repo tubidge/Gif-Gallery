@@ -25,7 +25,6 @@ function displayGifs(event) {
         method: "GET"
     }).then(function (response) {
 
-        // JSON.parse(response);
         // console.log(response);
         // var topicDiv = $("<div class ='topic'>");
         // var imgURL = response.data[0].images["fixed_height_still"].url;
@@ -41,9 +40,9 @@ function displayGifs(event) {
         // Writing for loop to add all 10 images to page.
         var results = response.data;
         for (var i = 0; i < results.length; i++) {
-            var topicDiv = $("<span>");
-            var imgURL = response.data[i].images["downsized_still"].url;
-            var gifURL = response.data[i].images["downsized"].url;
+            var topicDiv = $("<span class='img-span'>");
+            var imgURL = response.data[i].images["fixed_width_still"].url;
+            var gifURL = response.data[i].images["fixed_width"].url;
             console.log("Image: " + imgURL);
             console.log("GIF: " + gifURL);
             var image = $("<img class='image'>").attr("src", imgURL);
