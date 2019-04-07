@@ -11,3 +11,5 @@
 * You can then click on each image to run the GIF animation.
 
 * I have started you off with the most obvious GIF search term: Cats.
+
+Link to deployed page on GitHub: https://tubidge.github.io/Gif-Gallery/
